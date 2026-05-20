@@ -10,7 +10,17 @@
   <link rel="stylesheet" href="tes.css" />
 </head>
 <body>
-
+  <script>
+    const gallery = document.getElementById('photoGallery');
+    const photos = gallery.querySelectorAll('.photo');
+    let current = 0;
+  
+    gallery.addEventListener('click', () => {
+      photos[current].classList.remove('active');
+      current = (current + 1) % photos.length;
+      photos[current].classList.add('active');
+    });
+  </script>
   <!-- Cahaya latar -->
   <div class="glow glow-1"></div>
   <div class="glow glow-2"></div>
