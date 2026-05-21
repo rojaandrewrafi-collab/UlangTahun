@@ -188,8 +188,16 @@ body {
   height: clamp(200px, 40vw, 280px);
   border-radius: 50%;
   object-fit: cover;
-  display: block;
+  display: none;
   background: linear-gradient(135deg, #3d2a10, #1a1208);
+}
+.photo.active {
+  display: block;
+}
+
+.photo-gallery {
+  cursor: pointer;
+  position: relative;
 }
 
 .photo-placeholder {
