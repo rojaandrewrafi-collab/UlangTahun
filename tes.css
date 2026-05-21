@@ -188,7 +188,6 @@ body {
   height: clamp(200px, 40vw, 280px);
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
   display: block;
   background: linear-gradient(135deg, #3d2a10, #1a1208);
 }
